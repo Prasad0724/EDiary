@@ -1,0 +1,2 @@
+# EDiary
+Ediary Page
