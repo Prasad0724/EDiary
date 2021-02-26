@@ -1,0 +1,131 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background: #FBEEC1;
+}
+section{
+	width: 100%;
+	float: left;
+	height: 522px;
+	color: #ffffff;
+	/*background: #778899;*/
+}
+h1{
+	color: #F05837;
+	text-shadow: 2px 2px #ff0000;
+}
+.welcome{
+	color: black;
+}
+.previous{
+	height: 26%;
+	width: 100%;
+	background:#BC986A; 
+	color: black;
+	border-style: solid;
+	padding: 2px;
+	border-radius: 100px;
+	border-width: 5px;
+	position: top;
+}
+.today{
+	height: 70%;
+	color: 	black;
+	background: #659DBD	;
+	border-style: solid;
+	border-radius: 30px;
+	border-width: 5px;
+	float: right;
+}
+#outputID{
+	float: right;
+	width: 50%;
+	height: 70%;
+	color: 	black;
+	background: #659DBD	;
+	border-style: solid;
+	border-radius: 30px;
+	border-width: 5px;
+}
+#todayID{
+	float: left;
+	width: 50%
+}
+.btnDoneClass{
+	position: "center";
+}
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: solid black;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px #999;
+}
+
+.button:hover {background-color: #8D8712}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.RegistrationPage{
+	width: 360px;
+	padding: 10% 0 0;
+	margin: auto;
+	color: black;
+}
+.LogInPage{
+	width: 360px;
+	padding: 10% 0 0;
+	margin: auto;
+	color: black;
+
+}
+.form{
+	position: relative;
+	z-index: 1;
+	background: #ffffff;
+	margin: 0 auto 100px;
+	max-width: 360px;
+	padding: 45px;
+	text-align: center;
+	background: #659DBD;
+
+}
+.form input{
+	font-family: sans-serif;
+	outline: 1;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+L
+.LogInclass{
+	color: #FBEEC1;
+
+}
+#RegID{
+float: left;
+width: 50%;
+}
+#LogID{
+	float: left;
+	width: 50%;
+
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="C:/Users/Chinna/Documents/EncrytedDiary/Hpage.css">
+	<meta charset="utf-8">
+	<title>Encrypted Diary</title>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" ></script>
+	<link rel="shortcut icon" type="image/png" href="ED.png">
+    <script src="Homepage.js"></script>
+</head>
+<body>
+	<div id="login_div" class="main-div">
+		<div class="RegistrationPage" id="RegID">
+		<h1 align="center" class="head">Register to Encrypted </br>E-Diary</h1>
+		<div class="form">
+			<div class="RegForm" >
+				<input type="email" name="email" id="email" placeholder="Email ID"/><br><br>
+				<input type="password" name="password" id="password" placeholder="Password"/><br><br>
+				<button class="button" onclick="signup()">Register</button><br><br>
+				<p>Already registered? Please <a href="#LogForm"> LogIn</a></p>
+			</div>
+		</div>
+		
+	</div>
+		<div class="LogInPage" id="LogID">
+		<h1 align="center" class="head">LogIn to Encrypted </br>E-Diary</h1>
+		<div class="form">
+			<div class="LogForm" >
+				<input type="email" name="email" id="emailID" placeholder="Email ID"/><br><br>
+				<input type="password" name="password" id="passwordID" placeholder="Password"/><br><br>
+				<button class="button" onclick="signin()">LogIn</button><br><br>
+				<p>Not yet registered? Please<a href="#RegForm"> Register</a></p>
+			</div>
+		</div>
+		
+	</div>
+	</div>
+	<div id="user_div" class="loggedin-div">
+	
+	<section>
+		<div align = "right"><button class="button" onclick="logout()">Sign Out</button></div>
+		<div class="welcome"><h1 align="center" class="header1"> Encrypted E-Diary
+		</h1></div>
+		<div class="previous" align="center">
+			<h2 >To read previous writings click on date</h2>
+			<div ><input  id = "dateID" type="date"  name="date" min="1000-01-01" max="3000-12-31" class="form-control" placeholder="calender"> </div>
+		</br>
+			<div  class="btnSearchClass"><button id = " btnSearch" class="button" onclick="getdata()">Search</button>
+			</div>
+		</div>
+		</br>
+		<div id="outputID">
+			<p id="user_para">Welcome to Encrypted E-Diary. You're currently logged in.</p>
+				
+		</div>
+		<div class="today" id="todayID">
+			<h2>Write today's diary</h2>
+			<!-- <div class = "textareaclass"> -->
+			<textarea  id = "textAreaID" name="message" style="margin-top: 20px;overflow: hidden;" rows="10" cols="26" onkeypress="auto_grow(this);" onkeyup="auto_grow(this);" style=" "placeholder="Enter your memories here" ></textarea>
+			<!-- </div> -->
+			</br>
+			<!-- <div class="btnDoneClass" align="center">  -->
+				<button id = "btnDone" class="button" onclick = "writedata()">Done</button></div>
+			<!-- </div> -->
+			<script type="text/javascript">
+				function auto_grow(element){
+					element.style.height = "5px";
+					element.style.height = (element.scrollHeight) + "px";
+
+				}
+			</script>
+		</div>
+	</section>
+	
+	</div>
+	</div>
+	
+</body>
+
+</html>
